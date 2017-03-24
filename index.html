@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset=UTF-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./static/external/reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="./static/external/reveal.js/css/theme/blood.css">
+    <link rel="stylesheet" href="./static/css/master.css">
+    <title>Présentation de Knacss</title>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <img src="./static/img/knacss.png" alt="Logo-titre" id="logo">
+            </section>
+            <section>
+                <h2>Sommaire</h2>
+                <ol>
+                    <li>Présentation de Knacss</li>
+                    <li>Grillade</li>
+                    <li>Système d'alignement</li>
+                    <li>Un quatrième section</li>
+                </ol>
+            </section>
+            <section>
+                <h2>Présentation</h2>
+                <p>KNACSS, c’est un peu comme une feuille de style CSS « reset » sur-vitaminée qui permet de commencer un projet à partir de zéro tout en tenant compte de bonnes pratiques générales (accessibilité, performance, responsive webdesign).</p>
+
+                <p>"KNACSS est un outil construit avec amour et du CSS par <a href="http://www.goetter.fr/">Raphaël Goetter</a> et <a href="https://www.alsacreations.com/">Alsacréations.</a>"</p>
+            </section>
+            <section>
+                <section>
+                    <h2>Un système de grille : la grillade</h2>
+                    <p>"Grillade" est un système de grille simple et élaboré avec CSS3 Flexbox. Il est intégré par défaut dans le micro-framework KNACSS d'Alsacréations mais peut être utilisé de manière autonome sans nécessiter KNACSS ou d'autre dépendance.</p>
+                </section>
+                <section>
+                    <h3>Grilles mono-ligne</h3>
+                    <h4>.grid</h4>
+                    <p>Un conteneur possédant la classe grid définit une grille monoligne ou les éléments se répartissent l'espace.</p>
+                </section>
+                <section>
+                    <pre><code>
+                        <span style="color:#586e75">&lt;</span><span style="color:#268bd2;font-weight:700">section</span> <span style="color:#93a1a1">class</span>=<span style="color:#269186"><span style="color:#269186">"</span>grid<span style="color:#269186">"</span></span><span style="color:#586e75">></span>
+                            <span style="color:#586e75">&lt;</span><span style="color:#268bd2;font-weight:700">div</span><span style="color:#586e75">></span>div<span style="color:#586e75">&lt;/</span><span style="color:#268bd2;font-weight:700">div</span><span style="color:#586e75">></span>
+                            [...]
+                            <span style="color:#586e75">&lt;</span><span style="color:#268bd2;font-weight:700">div</span><span style="color:#586e75">></span>div<span style="color:#586e75">&lt;/</span><span style="color:#268bd2;font-weight:700">div</span><span style="color:#586e75">></span>
+                        <span style="color:#586e75">&lt;/</span><span style="color:#268bd2;font-weight:700">section</span><span style="color:#586e75">></span>
+                    </code></pre>
+                    <img src="static/img/Pasted image at 2017_03_24 04_09 PM.png" alt="résultat code" width="1000" height="90">
+                </section>
+                <section>
+                    <h3>Grilles multi-lignes</h3>
+                    <h4>.grid-<span class="red">n</span></h4>
+                    <p>Ou <span class="red">n</span> prend une valeur de 2 à 12. La grille sera donc constituée de maximum <span class="red">n</span> éléments par ligne.</p>
+                </section>
+                <section>
+                    <p>Par exemple: .grid-6</p>
+                    <pre><code>
+                <span style="color:#586e75">&lt;</span><span style="color:#268bd2;font-weight:700">section</span> <span style="color:#93a1a1">class</span>=<span style="color:#269186"><span style="color:#269186">"</span>grid-6 txtcenter<span style="color:#269186">"</span></span><span style="color:#586e75">></span>
+                    <span style="color:#586e75">&lt;</span><span style="color:#268bd2;font-weight:700">div</span><span style="color:#586e75">></span>div<span style="color:#586e75">&lt;/</span><span style="color:#268bd2;font-weight:700">div</span><span style="color:#586e75">></span>
+                    [...]
+                    <span style="color:#586e75">&lt;</span><span style="color:#268bd2;font-weight:700">div</span><span style="color:#586e75">></span>div<span style="color:#586e75">&lt;/</span><span style="color:#268bd2;font-weight:700">div</span><span style="color:#586e75">></span>
+                <span style="color:#586e75">&lt;/</span><span style="color:#268bd2;font-weight:700">section</span><span style="color:#586e75">></span>
+                    </code></pre>
+                    <img src="static/img/Pasted image at 2017_03_24 04_10 PM.png" alt="résultat code" width="1000" height="180">
+                </section>
+                <section>
+                    <p>Il est également possible de définir la largeur de chaque élément grâce à certaines classes :</p>
+                    <ul>
+                        <li>full</li>
+                        <li>one-half</li>
+                        <li>one-third</li>
+                        <li>one-quarter</li>
+                        <li>one-fifth</li>
+                        <li>one-sixth</li>
+                        <li>two-thirds</li>
+                        <li>three-quarters</li>
+                        <li>five-sixths</li>
+                    </ul>
+                </section>
+                <section>
+                    <p>Exemple :</p>
+                    <img src="static/img/Pasted image at 2017_03_24 04_10 PM (1).png" alt="result code" width="1000" height="480">
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h2>Système d'alignement</h2>
+                    <p>Avec KNACSS, il est possible d'aligner le contenu de votre page avec un système de classes (un peu comme bootstrap, mais sans avoir besoin de la grille).</p>
+                </section>
+                <section>
+                    <h3>Alignement des conteneurs</h3>
+                    <pre><code>
+                        exemple de code ici
+                    </code></pre>
+                    <img src="http://placehold.it/800x400" alt="résultat code" width="800" height="auto">
+                </section>
+                <section>
+                    <h3>Alignement du contenu</h3>
+                    <pre><code>
+                        exemple de code ici
+                    </code></pre>
+                    <img src="http://placehold.it/800x400" alt="résultat code" width="800" height="auto">
+                </section>
+            </section>
+        </div>
+    </div>
+    <script src="./static/external/reveal.js/js/reveal.js" charset="utf-8"></script>
+    <script src="./static/js/script.js" charset="utf-8"></script>
+</body>
+</html>
