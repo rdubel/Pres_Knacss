@@ -20,8 +20,8 @@
                 <ol>
                     <li>Présentation de Knacss</li>
                     <li>Grillade</li>
-                    <li>Système d'alignement</li>
-                    <li>Un quatrième section</li>
+                    <li>Les Helpers</li>
+                    <li>Alignements et Positionement</li>
                 </ol>
             </section>
             <section>
@@ -43,9 +43,9 @@
                 <section>
                     <pre><code>
                         <span style="color:#586e75">&lt;</span><span style="color:#268bd2;font-weight:700">section</span> <span style="color:#93a1a1">class</span>=<span style="color:#269186"><span style="color:#269186">"</span>grid<span style="color:#269186">"</span></span><span style="color:#586e75">></span>
-                            <span style="color:#586e75">&lt;</span><span style="color:#268bd2;font-weight:700">div</span><span style="color:#586e75">></span>div<span style="color:#586e75">&lt;/</span><span style="color:#268bd2;font-weight:700">div</span><span style="color:#586e75">></span>
-                            [...]
-                            <span style="color:#586e75">&lt;</span><span style="color:#268bd2;font-weight:700">div</span><span style="color:#586e75">></span>div<span style="color:#586e75">&lt;/</span><span style="color:#268bd2;font-weight:700">div</span><span style="color:#586e75">></span>
+                        <span style="color:#586e75">&lt;</span><span style="color:#268bd2;font-weight:700">div</span><span style="color:#586e75">></span>div<span style="color:#586e75">&lt;/</span><span style="color:#268bd2;font-weight:700">div</span><span style="color:#586e75">></span>
+                        [...]
+                        <span style="color:#586e75">&lt;</span><span style="color:#268bd2;font-weight:700">div</span><span style="color:#586e75">></span>div<span style="color:#586e75">&lt;/</span><span style="color:#268bd2;font-weight:700">div</span><span style="color:#586e75">></span>
                         <span style="color:#586e75">&lt;/</span><span style="color:#268bd2;font-weight:700">section</span><span style="color:#586e75">></span>
                     </code></pre>
                     <img src="static/img/Pasted image at 2017_03_24 04_09 PM.png" alt="résultat code" width="1000" height="90">
@@ -58,11 +58,11 @@
                 <section>
                     <p>Par exemple: .grid-6</p>
                     <pre><code>
-                <span style="color:#586e75">&lt;</span><span style="color:#268bd2;font-weight:700">section</span> <span style="color:#93a1a1">class</span>=<span style="color:#269186"><span style="color:#269186">"</span>grid-6 txtcenter<span style="color:#269186">"</span></span><span style="color:#586e75">></span>
-                    <span style="color:#586e75">&lt;</span><span style="color:#268bd2;font-weight:700">div</span><span style="color:#586e75">></span>div<span style="color:#586e75">&lt;/</span><span style="color:#268bd2;font-weight:700">div</span><span style="color:#586e75">></span>
-                    [...]
-                    <span style="color:#586e75">&lt;</span><span style="color:#268bd2;font-weight:700">div</span><span style="color:#586e75">></span>div<span style="color:#586e75">&lt;/</span><span style="color:#268bd2;font-weight:700">div</span><span style="color:#586e75">></span>
-                <span style="color:#586e75">&lt;/</span><span style="color:#268bd2;font-weight:700">section</span><span style="color:#586e75">></span>
+                        <span style="color:#586e75">&lt;</span><span style="color:#268bd2;font-weight:700">section</span> <span style="color:#93a1a1">class</span>=<span style="color:#269186"><span style="color:#269186">"</span>grid-6 txtcenter<span style="color:#269186">"</span></span><span style="color:#586e75">></span>
+                        <span style="color:#586e75">&lt;</span><span style="color:#268bd2;font-weight:700">div</span><span style="color:#586e75">></span>div<span style="color:#586e75">&lt;/</span><span style="color:#268bd2;font-weight:700">div</span><span style="color:#586e75">></span>
+                        [...]
+                        <span style="color:#586e75">&lt;</span><span style="color:#268bd2;font-weight:700">div</span><span style="color:#586e75">></span>div<span style="color:#586e75">&lt;/</span><span style="color:#268bd2;font-weight:700">div</span><span style="color:#586e75">></span>
+                        <span style="color:#586e75">&lt;/</span><span style="color:#268bd2;font-weight:700">section</span><span style="color:#586e75">></span>
                     </code></pre>
                     <img src="static/img/Pasted image at 2017_03_24 04_10 PM.png" alt="résultat code" width="1000" height="180">
                 </section>
@@ -87,27 +87,92 @@
             </section>
             <section>
                 <section>
-                    <h2>Système d'alignement</h2>
-                    <p>Avec KNACSS, il est possible d'aligner le contenu de votre page avec un système de classes (un peu comme bootstrap, mais sans avoir besoin de la grille).</p>
+                    <h2>Helpers</h2>
+                    <p>Les "Helpers" sont des classes purement visuelles et utilitaires (non "sémantiques"), pas très jolie mais rudement pratiques en production pour alléger vos feuilles de styles.</p>
                 </section>
                 <section>
-                    <h3>Alignement des conteneurs</h3>
-                    <pre><code>
-                        exemple de code ici
-                    </code></pre>
-                    <img src="http://placehold.it/800x400" alt="résultat code" width="800" height="auto">
+                    <h3>Helpers de largeur</h3>
                 </section>
                 <section>
-                    <h3>Alignement du contenu</h3>
-                    <pre><code>
-                        exemple de code ici
-                    </code></pre>
-                    <img src="http://placehold.it/800x400" alt="résultat code" width="800" height="auto">
+                    <h4>En pourcentage</h4>
+                    <code><pre>
+                        <span style="color:#586e75">&lt;</span><span style="color:#268bd2;font-weight:700">section</span><span style="color:#586e75">></span>
+                        <span style="color:#586e75">&lt;</span><span style="color:#268bd2;font-weight:700">div</span> <span style="color:#93a1a1">class</span>=<span style="color:#269186"><span style="color:#269186">"</span>w10<span style="color:#269186">"</span></span><span style="color:#586e75">></span>.w10 (10%)<span style="color:#586e75">&lt;/</span><span style="color:#268bd2;font-weight:700">div</span><span style="color:#586e75">></span>
+                        <span style="color:#586e75">&lt;</span><span style="color:#268bd2;font-weight:700">div</span> <span style="color:#93a1a1">class</span>=<span style="color:#269186"><span style="color:#269186">"</span>w20<span style="color:#269186">"</span></span><span style="color:#586e75">></span>.w20 (20%)<span style="color:#586e75">&lt;/</span><span style="color:#268bd2;font-weight:700">div</span><span style="color:#586e75">></span>
+                        <span style="color:#586e75">&lt;</span><span style="color:#268bd2;font-weight:700">div</span> <span style="color:#93a1a1">class</span>=<span style="color:#269186"><span style="color:#269186">"</span>w25<span style="color:#269186">"</span></span><span style="color:#586e75">></span>.w25 (25%)<span style="color:#586e75">&lt;/</span><span style="color:#268bd2;font-weight:700">div</span><span style="color:#586e75">></span>
+                        <span style="color:#586e75">&lt;</span><span style="color:#268bd2;font-weight:700">div</span> <span style="color:#93a1a1">class</span>=<span style="color:#269186"><span style="color:#269186">"</span>w75<span style="color:#269186">"</span></span><span style="color:#586e75">></span>.w75 (75%)<span style="color:#586e75">&lt;/</span><span style="color:#268bd2;font-weight:700">div</span><span style="color:#586e75">></span>
+                        <span style="color:#586e75">&lt;</span><span style="color:#268bd2;font-weight:700">div</span> <span style="color:#93a1a1">class</span>=<span style="color:#269186"><span style="color:#269186">"</span>w80<span style="color:#269186">"</span></span><span style="color:#586e75">></span>.w80 (80%)<span style="color:#586e75">&lt;/</span><span style="color:#268bd2;font-weight:700">div</span><span style="color:#586e75">></span>
+                        <span style="color:#586e75">&lt;</span><span style="color:#268bd2;font-weight:700">div</span> <span style="color:#93a1a1">class</span>=<span style="color:#269186"><span style="color:#269186">"</span>w100<span style="color:#269186">"</span></span><span style="color:#586e75">></span>.w100 (100%)<span style="color:#586e75">&lt;/</span><span style="color:#268bd2;font-weight:700">div</span><span style="color:#586e75">></span>
+                        <span style="color:#586e75">&lt;/</span><span style="color:#268bd2;font-weight:700">section</span><span style="color:#586e75">></span>
+                    </pre></code>
+                    <img src="static/img/pourcentage" alt="exemple en %" width="1000" height="250">
+                </section>
+                <section>
+                    <h4>En pixels</h4>
+                    <code><pre>
+                        <span style="color:#586e75">&lt;</span><span style="color:#268bd2;font-weight:700">section</span><span style="color:#586e75">></span>
+                        <span style="color:#586e75">&lt;</span><span style="color:#268bd2;font-weight:700">div</span> <span style="color:#93a1a1">class</span>=<span style="color:#269186"><span style="color:#269186">"</span>w100p<span style="color:#269186">"</span></span><span style="color:#586e75">></span>.w100p (100px)<span style="color:#586e75">&lt;/</span><span style="color:#268bd2;font-weight:700">div</span><span style="color:#586e75">></span>
+                        <span style="color:#586e75">&lt;</span><span style="color:#268bd2;font-weight:700">div</span> <span style="color:#93a1a1">class</span>=<span style="color:#269186"><span style="color:#269186">"</span>w200p<span style="color:#269186">"</span></span><span style="color:#586e75">></span>.w200p (200px)<span style="color:#586e75">&lt;/</span><span style="color:#268bd2;font-weight:700">div</span><span style="color:#586e75">></span>
+                        <span style="color:#586e75">&lt;</span><span style="color:#268bd2;font-weight:700">div</span> <span style="color:#93a1a1">class</span>=<span style="color:#269186"><span style="color:#269186">"</span>w500p<span style="color:#269186">"</span></span><span style="color:#586e75">></span>.w500p (500px)<span style="color:#586e75">&lt;/</span><span style="color:#268bd2;font-weight:700">div</span><span style="color:#586e75">></span>
+                        <span style="color:#586e75">&lt;/</span><span style="color:#268bd2;font-weight:700">section</span><span style="color:#586e75">></span>
+                    </pre></code>
+                    <img src="static/img/pixels.png" alt="Exemple en px" width="1000" height="200">
+                </section>
+                <section>
+                    <h3>Helpers d'espacements</h3>
+                    <p>Leur nommage est assez intuitif :</p>
+                    <ul>
+                        <li>p,m = padding, margin</li>
+                        <li>a,t,r,b,l = all, top, right, bottom,left</li>
+                        <li>s,m,l,n (ou 0) = small, medium, large, none (ou 0)</li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Marges externes</h4>
+                    <img src="static/img/external.png" alt="Exemple marge externe"  width="1000" height="300">
+                </section>
+                <section>
+                    <h4>Marges internes</h4>
+                    <img src="static/img/internal.png" alt="Exemple marge interne" width="1000" height="300">
                 </section>
             </section>
+            <section>
+                <section>
+                    <h2>Alignement</h2>
+                    <ul>
+                        <li>les textes et contenus "inline" sont gérés via les classes <span class="red">.txtleft</span>, <span class="red">.txtright</span> et <span class="red">.txtcenter</span> qui agiront sur la propriété CSS text-align</li>
+                        <li>les blocs sont alignés avec les classes <span class="red">.left</span>, <span class="red">.right</span> et <span class="red">.center</span> qui affectent la valeur auto à la propriété margin</li>
+                    </section>
+                    <section>
+                        <pre><code>
+                        <span style="color:#586e75">&lt;</span><span style="color:#268bd2;font-weight:700">section</span> <span style="color:#93a1a1">class</span>=<span style="color:#269186"><span style="color:#269186">"</span>clearfix<span style="color:#269186">"</span></span><span style="color:#586e75">></span>
+                            <span style="color:#586e75">&lt;</span><span style="color:#268bd2;font-weight:700">div</span> <span style="color:#93a1a1">class</span>=<span style="color:#269186"><span style="color:#269186">"</span>w30 left txtleft<span style="color:#269186">"</span></span><span style="color:#586e75">></span>
+                                <span style="color:#586e75">&lt;</span><span style="color:#268bd2;font-weight:700">p</span><span style="color:#586e75">></span>.w30 .left .txtleft<span style="color:#586e75">&lt;/</span><span style="color:#268bd2;font-weight:700">p</span><span style="color:#586e75">></span>
+                            <span style="color:#586e75">&lt;/</span><span style="color:#268bd2;font-weight:700">div</span><span style="color:#586e75">></span>
+                            [...]
+                            <span style="color:#586e75">&lt;</span><span style="color:#268bd2;font-weight:700">div</span> <span style="color:#93a1a1">class</span>=<span style="color:#269186"><span style="color:#269186">"</span>w30 right txtright mrm<span style="color:#269186">"</span></span><span style="color:#586e75">></span>
+                                <span style="color:#586e75">&lt;</span><span style="color:#268bd2;font-weight:700">p</span><span style="color:#586e75">></span>.w30 .right .txtright<span style="color:#586e75">&lt;/</span><span style="color:#268bd2;font-weight:700">p</span><span style="color:#586e75">></span>
+                            <span style="color:#586e75">&lt;/</span><span style="color:#268bd2;font-weight:700">div</span><span style="color:#586e75">></span>
+                        <span style="color:#586e75">&lt;/</span><span style="color:#268bd2;font-weight:700">section</span><span style="color:#586e75">></span>
+                        </code></pre>
+                        <img src="static/img/align.png" alt="résultat code" width="1000" height="100">
+                    </section>
+                    <section>
+                        <h2>Positionnement</h2>
+                        <p>Au-delà des alignements d'éléments, KNACSS permet de positionner et d'architecturer vos gabarits à travers plusieurs solutions.w</p>
+                    </section>
+                    <section>
+                        <h3>Flottants et inline-block</h3>
+                        <img src="static/img/floats.png" alt="Exemple float" width="1000" height="70">
+                    </section>
+                    <section>
+                        <h3>Flex</h3>
+                        <img src="static/img/flex.png" alt="Exemple flex">
+                    </section>
+                </section>
+            </div>
         </div>
-    </div>
-    <script src="./static/external/reveal.js/js/reveal.js" charset="utf-8"></script>
-    <script src="./static/js/script.js" charset="utf-8"></script>
-</body>
-</html>
+        <script src="./static/external/reveal.js/js/reveal.js" charset="utf-8"></script>
+        <script src="./static/js/script.js" charset="utf-8"></script>
+    </body>
+    </html>
